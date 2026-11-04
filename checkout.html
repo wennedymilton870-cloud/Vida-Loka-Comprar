@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagamento — Vida Loka</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#15110e">
+  <link rel="icon" href="img/logo-vida-loka.png" type="image/png">
+  <link rel="stylesheet" href="css/site.css">
+  <!-- O Stripe.js precisa ser carregado direto do js.stripe.com (nunca copie nem empacote este arquivo) -->
+  <script src="https://js.stripe.com/dahlia/stripe.js"></script>
+</head>
+<body>
+<div class="page-top">
+  <div class="wrap">
+    <a href="index.html" aria-label="Voltar para a página inicial"><img src="img/logo-vida-loka.png" width="530" height="450" alt="Vida Loka"></a>
+    <a class="back" href="index.html">Voltar para a loja</a>
+  </div>
+</div>
+<main class="wrap checkout-grid">
+  <section class="summary">
+    <h1>Finalizar compra</h1>
+    <p class="lead">Vida Loka, o jogo completo.</p>
+    <ul>
+      <li>Versão para Windows (.exe)</li>
+      <li>Versão para Android (.apk)</li>
+      <li>Download liberado assim que o pagamento for confirmado</li>
+    </ul>
+    <div class="sign"><small>Total, pagamento único</small><span class="price">R$ 8,00</span></div>
+  </section>
+  <section>
+    <div class="pay-card">
+      <p id="pay-status" class="pay-status" role="alert" hidden></p>
+      <p id="pay-loading" class="pay-loading">Carregando o pagamento…</p>
+      <div id="checkout-form"></div>
+    </div>
+  </section>
+</main>
+<script src="js/checkout.js"></script>
+</body>
+</html>
