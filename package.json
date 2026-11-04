@@ -1,0 +1,11 @@
+{
+  "name": "vida-loka-loja",
+  "version": "1.0.0",
+  "description": "Loja do jogo Vida Loka com Stripe Checkout (formulário embutido) e download após o pagamento.",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/server.test.js"
+  }
+}
